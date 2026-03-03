@@ -284,7 +284,12 @@ p{
 .div-footer{
     padding-top: 100px;
     padding-left: 156px;
+    max-height: 72px;
+}
+
+.div-footer p{
     max-width: 264px;
+    margin-top: 16px;
 }
 
 .page-nav .link:hover,
