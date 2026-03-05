@@ -46,7 +46,6 @@ img{
 
 .container.header{
     display: flex;
-    gap:40px;
 }
 
 .nav{
@@ -64,11 +63,11 @@ img{
 }
 
 .page-header,
-.page-header .home-link{
+.home-link.header{
     color:#2E2F42;
 }
 
-.page-header .home-link{
+.home-link.header{
     padding: 24px 0;
 }
 
@@ -251,7 +250,7 @@ p{
     padding: 32px 16px;
 }
 
-.portfolio-list .p-title{
+.p-title.portfolio{
     margin-bottom: 8px;
 }
 
@@ -277,12 +276,12 @@ p{
 
 .link:hover,
 .link:focus,
-.address-list .address-link:hover,
-.address-list .address-link:focus{
+.address-link:hover,
+.address-link:focus{
     color:#404BBF;
 }
 
-.page-nav .link:active{
+.link:active{
     text-decoration:underline;
 }
  
