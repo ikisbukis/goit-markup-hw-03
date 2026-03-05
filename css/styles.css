@@ -14,16 +14,10 @@
 }
 
 .container{
-    max-width: 1440px; 
+    max-width: 1158px; 
     width: 100%;
     margin: 0 auto;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-main{
-    flex-grow:1;
+    padding: 0 15px;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -31,7 +25,13 @@ h1,h2,h3,h4,h5,h6{
     padding:0;
 }
 
-p, ul{
+ul{
+    margin:0;
+    padding-left:0;
+    list-style-type: none;
+}
+
+p{
     margin:0;
     padding:0;
 }
@@ -50,6 +50,7 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .page-nav,
@@ -61,10 +62,6 @@ img{
 .page-header,
 .page-header .home-link{
     color:#2E2F42;
-}
-
-ul{
-    list-style-type: none;
 }
 
 .home-link{
@@ -85,6 +82,7 @@ ul{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
 .page-nav{
@@ -127,14 +125,13 @@ ul{
     letter-spacing:0.02em;
     line-height:1.07;
     text-align: center;
-    padding-top: 188px;
     max-width: 496px;
     margin-bottom: 48px;
 }
 
 .title-section{
     background-color: #2E2F42;
-    height: 600px;
+    padding: 188px 0
 }
 
 .section-title{
@@ -146,10 +143,10 @@ ul{
 }
 
 .section-features{
-    height:344px;
+    padding: 120px 0;
 }
 
-.section-title-features{
+.visually-hidden{
     font-weight: 700;
     font-size: 36px;
     letter-spacing:0.02em;
@@ -169,7 +166,7 @@ ul{
     display:block;
     margin: 0 auto;
     display:flex;
-    padding: 120px 156px;
+    padding: 0 156px;
     gap:24px;
 }
 
@@ -182,7 +179,7 @@ ul{
 }
 
 .features-list li{
-    min-width: 264px;
+    width:calc((100% - 3 * 24px) / 4);
 }
 
 p{
@@ -199,7 +196,6 @@ p{
 }
 
 .section-title.team{
-    padding-top:120px;
     margin-bottom: 72px;
 }
 
@@ -227,11 +223,11 @@ p{
 
 .section-team{
     background-color: #F4F4Fd;
-    height: 732px;
+    padding: 120px 0
 }
 
 .section-portfolio{
-    height: 1240px;
+    padding: 120px 0
 }
 
 .portfolio-list{
@@ -243,7 +239,6 @@ p{
 }
 
 .section-title.portfolio{
-    padding-top:120px;
     margin-bottom: 72px;
 }
 
@@ -281,13 +276,13 @@ p{
     color:#F4F4Fd;
 }
 
-.div-footer{
+.page-footer .container{
     padding-top: 100px;
     padding-left: 156px;
     max-height: 72px;
 }
 
-.div-footer p{
+.page-footer p{
     max-width: 264px;
     margin-top: 16px;
 }
