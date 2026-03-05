@@ -254,8 +254,8 @@ p{
     margin-bottom: 8px;
 }
 
-.section-team .p-title,
-.section-team p{
+.p-title.team,
+.team-paragraph{
     text-align: center;
 }
 
